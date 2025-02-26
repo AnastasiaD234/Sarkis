@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\backend\\Sarkis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,11 +15,11 @@
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\_herosection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_herosection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_herosection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -66,8 +66,7 @@
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_HeroSection.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T07:30:27.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T07:30:27.247Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Sarkis\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:43:01.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T07:43:01.584Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "Sarkis\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:32:23.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T07:32:23.641Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Footer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T19:57:30.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T19:57:30.208Z"
             },
             {
               "$type": "Document",
@@ -118,8 +114,7 @@
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T19:49:48.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T19:49:48.011Z"
             },
             {
               "$type": "Document",
@@ -129,7 +124,7 @@
               "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Header.cshtml",
               "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Header.cshtml",
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-24T19:57:45.813Z",
               "EditorCaption": ""
@@ -144,8 +139,7 @@
               "RelativeToolTip": "Sarkis\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T19:14:45.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T19:14:45.458Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Sarkis\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T19:54:52.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T19:54:52.571Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Sarkis\\Controllers\\IndexController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T19:53:28.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T19:53:28.342Z"
             },
             {
               "$type": "Document",
