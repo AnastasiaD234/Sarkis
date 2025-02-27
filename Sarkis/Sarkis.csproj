@@ -103,7 +103,7 @@
     <Content Include="Content\animate.css\animate.css" />
     <Content Include="Content\animate.css\animate.min.css" />
     <Content Include="Content\aos\aos.css" />
-    <Content Include="Content\aos\aos.js" />
+    <Content Include="Scripts\aos.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -155,14 +155,14 @@
     <Content Include="Content\glightbox\css\glightbox.css" />
     <Content Include="Content\glightbox\css\glightbox.min.css" />
     <Content Include="Content\glightbox\js\glightbox.js" />
-    <Content Include="Content\glightbox\js\glightbox.min.js" />
+    <Content Include="Scripts\glightbox.min.js" />
     <Content Include="Content\isotope-layout\isotope.pkgd.js" />
-    <Content Include="Content\isotope-layout\isotope.pkgd.min.js" />
-    <Content Include="Content\js\main.js" />
-    <Content Include="Content\php-email-form\validate.js" />
+    <Content Include="Scripts\isotope.pkgd.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\validate.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\swiper\swiper-bundle.min.css" />
-    <Content Include="Content\swiper\swiper-bundle.min.js" />
+    <Content Include="Scripts\swiper-bundle.min.js" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -301,7 +301,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
-    <Content Include="Views\Shared\_HeroSection.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -311,6 +311,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\js\" />
+    <Folder Include="Content\php-email-form\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

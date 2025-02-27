@@ -31,19 +31,19 @@ namespace Sarkis.Web
 
 
                bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
-                  "~/Content/aos/aos.js"));
+                  "~/Scripts/aos.js"));
                bundles.Add(new ScriptBundle("~/bundle/bootstrap/js").Include(
-                  "~/Content/bootstrap/js/bootstrap.min.js"));
+                  "~/Scripts/bootstrap.min.js"));
                bundles.Add(new ScriptBundle("~/bundle/glightbox/js").Include(
-                  "~/Content/glightbox/js/glightbox.min.js"));
+                  "~/Scripts/glightbox.min.js"));
                bundles.Add(new ScriptBundle("~/bundle/isotope-layout/js").Include(
-                  "~/Content/isotope-layout/isotope.pkgd.min.js"));
-               bundles.Add(new ScriptBundle("~/bundles/js/js").Include(
-                  "~/Content/js/main.js"));
-               bundles.Add(new ScriptBundle("~/bundles/php-email-from/js").Include(
-                  "~/Content/php-email-from/validate.js"));
-               bundles.Add(new ScriptBundle("~/bundles/swiper/js").Include(
-                  "~/Content/swiper/swiper-bundle.min.js"));
+                  "~/Scripts/isotope.pkgd.min.js"));
+               bundles.Add(new ScriptBundle("~/bundle/js/js").Include(
+                  "~/Scripts/main.js"));
+               bundles.Add(new ScriptBundle("~/bundle/php-email-from/js").Include(
+                  "~/Scripts/validate.js"));
+               bundles.Add(new ScriptBundle("~/bundle/swiper/js").Include(
+                  "~/Scripts/swiper-bundle.min.js"));
 
           }
         
