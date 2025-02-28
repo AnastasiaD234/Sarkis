@@ -13,5 +13,17 @@ namespace Sarkis.Controllers
         {
             return View();
         }
-    }
+          public ActionResult Meniu()
+          {
+               return View();
+          }
+          public ActionResult About()
+          {
+               return View();
+          }
+          public ActionResult Sali ()
+          {
+               return View();
+          }
+     }
 }

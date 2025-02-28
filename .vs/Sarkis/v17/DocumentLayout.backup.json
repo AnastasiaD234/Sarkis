@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "D:\\backend\\Sarkis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\sali.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\sali.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|d:\\backend\\sarkis\\sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|D:\\backend\\Sarkis\\sarkis\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +54,76 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Sarkis\\App_Start\\BundleConfig.cs",
-              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Sarkis\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:28:36.655Z",
+              "DocumentIndex": 1,
+              "Title": "Sali.cshtml",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\Sali.cshtml",
+              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Sali.cshtml",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\Sali.cshtml",
+              "RelativeToolTip": "Sarkis\\Views\\Shared\\Sali.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T14:08:45.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\About.cshtml",
+              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\About.cshtml",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\About.cshtml",
+              "RelativeToolTip": "Sarkis\\Views\\Shared\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T13:48:37.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Meniu.cshtml",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "RelativeToolTip": "Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T13:42:23.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Sarkis\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Sarkis\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:33:44.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sarkis\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sarkis\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:26:15.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\Home\\Index.cshtml",
@@ -60,7 +136,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "Sarkis\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:08:18.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Sarkis\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Sarkis\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:28:36.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\_ViewStart.cshtml",
@@ -73,26 +175,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Header.cshtml",
               "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Header.cshtml",
               "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Header.cshtml",
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T15:33:26.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\backend\\Sarkis\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwC0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T15:32:45.39Z",
               "EditorCaption": ""
