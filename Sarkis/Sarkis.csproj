@@ -493,6 +493,7 @@
     <Content Include="Content\boxicons\fonts\boxicons.ttf" />
     <Content Include="Content\boxicons\fonts\boxicons.woff" />
     <Content Include="Content\boxicons\fonts\boxicons.woff2" />
+    <Content Include="Content\img\gallery\baza.avif" />
     <Content Include="bin\roslyn\csc.exe.config" />
     <Content Include="bin\roslyn\csc.rsp" />
     <Content Include="bin\roslyn\csi.exe.config" />
@@ -507,7 +508,6 @@
     <Content Include="bin\Sarkis.dll.config" />
     <Content Include="Content\forms\book-a-table.php" />
     <Content Include="Content\forms\contact.php" />
-    <Content Include="Content\img\gallery\baza.avif" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -524,7 +524,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BoundleConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -573,6 +572,8 @@
     <Content Include="Views\Shared\Meniu.cshtml" />
     <Content Include="Views\Shared\About.cshtml" />
     <Content Include="Views\Shared\Sali.cshtml" />
+    <Content Include="Views\Shared\Contact.cshtml" />
+    <Content Include="Views\Shared\Galerie.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
