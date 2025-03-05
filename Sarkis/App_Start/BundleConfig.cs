@@ -33,7 +33,7 @@ namespace Sarkis.Web
                bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
                   "~/Scripts/aos.js"));
                bundles.Add(new ScriptBundle("~/bundle/bootstrap/js").Include(
-                  "~/Scripts/bootstrap .min.js"));
+                  "~/Scripts/bootstrap.min.js"));
                bundles.Add(new ScriptBundle("~/bundle/glightbox/js").Include(
                   "~/Scripts/glightbox.min.js"));
                bundles.Add(new ScriptBundle("~/bundle/isotope-layout/js").Include(
