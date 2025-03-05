@@ -573,6 +573,7 @@
     <Content Include="Views\Shared\Meniu.cshtml" />
     <Content Include="Views\Shared\About.cshtml" />
     <Content Include="Views\Shared\Sali.cshtml" />
+    <Content Include="Views\Shared\galerie.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
