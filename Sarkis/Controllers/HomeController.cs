@@ -25,5 +25,21 @@ namespace Sarkis.Controllers
           {
                return View();
           }
+          public ActionResult Galerie()
+          {
+               return View();
+          }
+          public ActionResult Contact()
+          {
+               return View();
+          }
+          public ActionResult Rezervare()
+          {
+               return View();
+          }
+          public ActionResult profile()
+          {
+               return View();
+          }
      }
 }

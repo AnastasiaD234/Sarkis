@@ -28,9 +28,9 @@ namespace Sarkis.Web
                 "~/Content/glightbox/css/glightbox.min.css", new CssRewriteUrlTransform()));
                bundles.Add(new StyleBundle("~/bundles/swiper/css").Include(
                   "~/Content/swiper/swiper-bundle.min.css", new CssRewriteUrlTransform()));
-
-
-               bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
+               bundles.Add(new StyleBundle("~/bundles/meniu/css").Include(
+             "~/Content/css/stylemenu.css", new CssRewriteUrlTransform()));
+ bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
                   "~/Scripts/aos.js"));
                bundles.Add(new ScriptBundle("~/bundle/bootstrap/js").Include(
                   "~/Scripts/bootstrap.min.js"));
@@ -44,6 +44,9 @@ namespace Sarkis.Web
                   "~/Scripts/validate.js"));
                bundles.Add(new ScriptBundle("~/bundle/swiper/js").Include(
                   "~/Scripts/swiper-bundle.min.js"));
+            
+               bundles.Add(new ScriptBundle("~/bundle/scriptmeniu/js").Include(
+               "~/Scripts/scriptmeniu.js"));
 
           }
         

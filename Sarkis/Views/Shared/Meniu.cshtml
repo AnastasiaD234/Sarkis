@@ -1,58 +1,2580 @@
-﻿
-@{
-     ViewBag.Title = "Meniu";
-}
+﻿<!-- Bara de categorii produse -->
+<div class="sidebar">
+     <div class="sidebar-title">Categorii</div>
+     <div class="sidebar-content">
 
+          <ul>
+               <li><a href="#dejun">Dejunuri</a></li>
+               <li><a href="#aperitiv">Aperitiv</a></li>
+               <li><a href="#caucaz">Bucate Caucaziene</a></li>
+               <li><a href="#rece">Gustari reci</a></li>
+               <li><a href="#intai">Felul intai</a></li>
+               <li><a href="#salata">Salate</a></li>
+               <li><a href="#pasta">Pasta</a></li>
+               <li><a href="#principal">Feluri Principale</a></li>
+               <li><a href="#garnitura">Garnituri</a></li>
+               <li><a href="#peste">Pește și fructe de mare</a></li>
+               <li><a href="#pestegratar">Peste la gratar</a></li>
+               <li><a href="#porcgratar">Porc la gratar</a></li>
+               <li><a href="#pasaregratar">Pasare la gratar</a></li>
+               <li><a href="#legumegratar">Legume la gratar</a></li>
+               <li><a href="#recomandatcarne">Recomandat pentru carne</a></li>
+               <li><a href="#desert">Deserturi</a></li>
+               <li><a href="#bautura">Bauturi</a></li>
 
-<section id="menu" class="menu section-bg">
-     <div class="container" data-aos="fade-up">
-
-          <div class="section-title">
-               <h2 class="section-title special-title1">Meniu</h2>
-               <p class="section-title special-title2">Meniu Delicios</p>
-          </div>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-               <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="menu-flters">
-                         <li data-filter="*" class="filter-active">All</li>
-                         <li data-filter=".filter-dejun">Mic Dejun</li>
-                         <li data-filter=".filter-aperitiv">Aperitiv</li>
-                         <li data-filter=".filter-caucaz">Bucate caucaziene</li>
-                         <li data-filter=".filter-rece">Gustări reci</li>
-                         <li data-filter=".filter-intai">Felul întâi</li>
-                         <li data-filter=".filter-salat">Salate</li>
-                         <li data-filter=".filter-pasta">Pasta</li>
-                         <li data-filter=".filter-principal">Feluri principale</li>
-                         <li data-filter=".filter-garnitura">Garnituri</li>
-                         <li data-filter=".filter-peste">Pește și fructe de mare</li>
-                         <li data-filter=".filter-gratar">Bucate la grătar</li>
-                         <li data-filter=".filter-desert">Deserturi</li>
-                    </ul>
-               </div>
-          </div>
-
-          <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-               <!--Mic dejun-->
-               <div class="col-lg-6 menu-item filter-dejun">
-                    <img src="assets/img/menu/dejun1.jpg" class="menu-img" alt="Omletă cu brânză">
-                    <div class="menu-content">
-                         <a href="#">Omletă cu brânză</a><span>75 MDL</span>
-                    </div>
-                    <div class="menu-ingredients">
-                         Oua, brânză, verdeață
-                    </div>
-               </div>
-
-               <div class="styles_loyaltyWrapper">
-                    <img src="assets/img/menu/dejun1.jpg" class="menu-img" alt="omleta cu branza">
-                    <div class="styles_loyalitywrapper_">
-
-                    </div>
-               </div>
-
-
-          </div>
-
+          </ul>
      </div>
-</section>
+</div>
+
+<div class="cart">
+     <h2 class="cart-title">Your Cart</h2>
+     <div class="cart-content">
+          <!--<div class="cart-box">
+              <img src="assets\img\menu\salata\salataaesarvegan.jpg" class="cart-img">
+              <div class="card-detail">
+                  <h2 class="cart-product-title">Casual Black Polo</h2>
+                  <span class="cart-price">105 lei</span>
+                  <div class="cart-quantity">
+                      <button id="decrement">-</button>
+                      <span class="number">1</span>
+                      <button id="increment">+</button>
+                  </div>
+              </div>
+              <i class="ri-delete-bin-line cart-remove"></i>
+          </div> -->
+     </div>
+     <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">0 lei</div>
+     </div>
+     <button class="btn-buy">Buy now</button>
+     <i class="ri-close-line" id="cart-close"></i>
+</div>
+
+<section class="shop">
+     <div class="product-container">
+          <!-- Dejunuri -->
+          <div id="dejun" class="category">
+               <h2>Dejunuri</h2>
+
+
+               <div class="product-content">
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="~/Content/img/menu/ejun/ochiuridin2oua.jpg" alt="">
+                         </div>
+                         <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                         </div>
+                         <h2 class="product-title">Omletă din 2 ouă</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                         </div>
+                         <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                         <div class="price-and-cart">
+                              <span class="price">127 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\omletavoinic.jpg">
+                         </div>
+                         <h2 class="product-title">Omletă Voinic</h2>
+                         <div class="price-and-cart">
+                              <span class="price">205 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuri.jpg">
+                         </div>
+                         <h2 class="product-title">Adaosuri</h2>
+                         <div class="price-and-cart">
+                              <span class="price">67 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Adaosuri</h2>
+                         <div class="price-and-cart">
+                              <span class="price">25 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Adaosuri</h2>
+                         <div class="price-and-cart">
+                              <span class="price">115 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\raviolicuspanac.jpg">
+                         </div>
+                         <h2 class="product-title">Ravioli cu spanac</h2>
+                         <div class="price-and-cart">
+                              <span class="price">147 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\eggsbenedict.jpg">
+                         </div>
+                         <h2 class="product-title">Eggs Benedict</h2>
+                         <div class="price-and-cart">
+                              <span class="price">276 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\clatitecucarne.jpg">
+                         </div>
+                         <h2 class="product-title">Clătite cu carne de pui</h2>
+                         <div class="price-and-cart">
+                              <span class="price">127 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\clatitecudulceata.jpg">
+                         </div>
+                         <h2 class="product-title">Clătite cu dulceața</h2>
+                         <div class="price-and-cart">
+                              <span class="price">95 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\clatitecuicrerosii.jpg">
+                         </div>
+                         <h2 class="product-title">Clătite cu icre roşii</h2>
+                         <div class="price-and-cart">
+                              <span class="price">425 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\clatitecubranzadevacisistafide.jpg">
+                         </div>
+                         <h2 class="product-title">Clătite cu brânză de vaci şi stafide</h2>
+                         <div class="price-and-cart">
+                              <span class="price">117 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\clatitecusomon.jpg">
+                         </div>
+                         <h2 class="product-title">Clătite cu somon</h2>
+                         <div class="price-and-cart">
+                              <span class="price">237 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\papanasidinbranzadevaciclasice.jpg">
+                         </div>
+                         <h2 class="product-title">Păpănaşi din brânză de vaci clasice</h2>
+                         <div class="price-and-cart">
+                              <span class="price">147 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\papanasidinbranzadevacicustafide.jpg">
+                         </div>
+                         <h2 class="product-title">Păpănaşi din brânză de vaci cu stafide</h2>
+                         <div class="price-and-cart">
+                              <span class="price">157 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Păpănaşi de dovleac</h2>
+                         <div class="price-and-cart">
+                              <span class="price">157 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci de porumb</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci cu halva</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci cremos cu banane</h2>
+                         <div class="price-and-cart">
+                              <span class="price">115 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci de ovăz</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci de ovăz</h2>
+                         <div class="price-and-cart">
+                              <span class="price">85 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Terci de ovăz cu migdale</h2>
+                         <div class="price-and-cart">
+                              <span class="price">107 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+
+                    <div class="product-box">
+                         <div class="img-box">
+                              <img src="assets\img\menu\dejun\adaosuribranza.jpg">
+                         </div>
+                         <h2 class="product-title">Bruschetta</h2>
+                         <div class="price-and-cart">
+                              <span class="price">125 lei</span>
+                              <i class="ri-shopping-bag-line  add-cart"></i>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+
+          <!-- Linie de separare -->
+          <hr class="category-divider">
+
+
+          <!----Aperitive----->
+          <div class="product-container">
+
+               <div id="aperitiv" class="category">
+                    <h2>Aperitive</h2>
+
+
+                    <div class="product-content">
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Omletă din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                              </div>
+                              <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">127 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <div class="img-box">
+                                   <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                              </div>
+                              <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <!-- Linie de separare -->
+               <hr class="category-divider">
+
+
+               <!----Bucate caucaziene----->
+               <div class="product-container">
+
+                    <div id="caucaz" class="category">
+                         <h2>Bucate caucaziene</h2>
+
+
+                         <div class="product-content">
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Omletă din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                   </div>
+                                   <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">127 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                              <div class="product-box">
+                                   <div class="img-box">
+                                        <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                   </div>
+                                   <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                   <div class="price-and-cart">
+                                        <span class="price">85 lei</span>
+                                        <i class="ri-shopping-bag-line  add-cart"></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <!-- Linie de separare -->
+                    <hr class="category-divider">
+
+
+                    <!----Gustari reci----->
+                    <div class="product-container">
+
+                         <div id="rece" class="category">
+                              <h2>Gustari reci</h2>
+
+
+                              <div class="product-content">
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Omletă din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                        </div>
+                                        <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">127 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <div class="img-box">
+                                             <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                        </div>
+                                        <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Linie de separare -->
+                         <hr class="category-divider">
+
+
+
+                         <!----Felul intai----->
+                         <div class="product-container">
+
+                              <div id="intai" class="category">
+                                   <h2>Felul intai</h2>
+
+
+                                   <div class="product-content">
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Omletă din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                             </div>
+                                             <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">127 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="product-box">
+                                             <div class="img-box">
+                                                  <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                             </div>
+                                             <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                             <div class="price-and-cart">
+                                                  <span class="price">85 lei</span>
+                                                  <i class="ri-shopping-bag-line  add-cart"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <!-- Linie de separare -->
+                              <hr class="category-divider">
+
+
+
+                              <!----Salate----->
+                              <div class="product-container">
+
+                                   <div id="salata" class="category">
+                                        <h2>Salate</h2>
+
+
+                                        <div class="product-content">
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">127 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <div class="img-box">
+                                                       <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                  </div>
+                                                  <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Linie de separare -->
+                                   <hr class="category-divider">
+
+
+                                   <!----Pasta----->
+                                   <div class="product-container">
+
+                                        <div id="pasta" class="category">
+                                             <h2>Pasta</h2>
+                                             <div class="product-content">
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">85 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">85 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">127 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">85 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">85 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="product-box">
+                                                       <div class="img-box">
+                                                            <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                       </div>
+                                                       <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                       <div class="price-and-cart">
+                                                            <span class="price">85 lei</span>
+                                                            <i class="ri-shopping-bag-line  add-cart"></i>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- Linie de separare -->
+                                        <hr class="category-divider">
+
+
+
+
+                                        <!----Feluri Principale----->
+                                        <div class="product-container">
+
+                                             <div id="principal" class="category">
+                                                  <h2>Feluri Principale</h2>
+
+
+                                                  <div class="product-content">
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">127 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <div class="img-box">
+                                                                 <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                            </div>
+                                                            <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                             <!-- Linie de separare -->
+                                             <hr class="category-divider">
+
+
+                                             <!----Garnituri----->
+                                             <div class="product-container">
+
+                                                  <div id="garnitura" class="category">
+                                                       <h2>Garnituri</h2>
+
+
+                                                       <div class="product-content">
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">127 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="product-box">
+                                                                 <div class="img-box">
+                                                                      <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                 </div>
+                                                                 <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                 <div class="price-and-cart">
+                                                                      <span class="price">85 lei</span>
+                                                                      <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <!-- Linie de separare -->
+                                                  <hr class="category-divider">
+
+
+
+                                                  <!----Pește și fructe de mare----->
+                                                  <div class="product-container">
+
+                                                       <div id="peste" class="category">
+                                                            <h2>Pește și fructe de mare</h2>
+
+
+                                                            <div class="product-content">
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <div class="img-box">
+                                                                           <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                      </div>
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+
+                                                       <!-- Linie de separare -->
+                                                       <hr class="category-divider">
+
+
+
+                                                       <!----peste la gratar----->
+                                                       <div class="product-container">
+
+                                                            <div id="pestegratar" class="category">
+                                                                 <h2>Pește la grătar</h2>
+
+
+                                                                 <div class="product-content">
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">85 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">85 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">127 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">85 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">127 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <div class="product-box">
+                                                                           <div class="img-box">
+                                                                                <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                           </div>
+                                                                           <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                           <div class="price-and-cart">
+                                                                                <span class="price">85 lei</span>
+                                                                                <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+
+
+                                                            <!-- Linie de separare -->
+                                                            <hr class="category-divider">
+
+
+                                                            <!----porc la gratar----->
+                                                            <div class="product-container">
+
+                                                                 <div id="porcgratar" class="category">
+                                                                      <h2>Porc la grătar</h2>
+                                                                      <div class="product-content">
+                                                                           <div class="product-box">
+                                                                                <div class="img-box">
+                                                                                     <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                </div>
+                                                                                <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                <div class="price-and-cart">
+                                                                                     <span class="price">85 lei</span>
+                                                                                     <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                </div>
+                                                                           </div>
+
+
+
+                                                                           <div class="product-box">
+                                                                                <div class="img-box">
+                                                                                     <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                </div>
+                                                                                <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                <div class="price-and-cart">
+                                                                                     <span class="price">85 lei</span>
+                                                                                     <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                </div>
+                                                                           </div>
+
+
+                                                                           <div class="product-box">
+                                                                                <div class="img-box">
+                                                                                     <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                </div>
+                                                                                <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                <div class="price-and-cart">
+                                                                                     <span class="price">85 lei</span>
+                                                                                     <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <!-- Linie de separare -->
+                                                                 <hr class="category-divider">
+
+                                                                 <!----pasare la gratar----->
+                                                                 <div class="product-container">
+
+                                                                      <div id="pasaregratar" class="category">
+                                                                           <h2>Pasăre la grătar</h2>
+                                                                           <div class="product-content">
+                                                                                <div class="product-box">
+                                                                                     <div class="img-box">
+                                                                                          <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                     </div>
+                                                                                     <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                     <div class="price-and-cart">
+                                                                                          <span class="price">85 lei</span>
+                                                                                          <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                     </div>
+                                                                                </div>
+
+                                                                                <div class="product-box">
+                                                                                     <div class="img-box">
+                                                                                          <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                     </div>
+                                                                                     <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                     <div class="price-and-cart">
+                                                                                          <span class="price">85 lei</span>
+                                                                                          <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                     </div>
+                                                                                </div>
+
+
+                                                                                <div class="product-box">
+                                                                                     <div class="img-box">
+                                                                                          <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                     </div>
+                                                                                     <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                     <div class="price-and-cart">
+                                                                                          <span class="price">85 lei</span>
+                                                                                          <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                     </div>
+                                                                                </div>
+
+
+                                                                                <div class="product-box">
+                                                                                     <div class="img-box">
+                                                                                          <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                     </div>
+                                                                                     <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                     <div class="price-and-cart">
+                                                                                          <span class="price">85 lei</span>
+                                                                                          <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                     </div>
+                                                                                </div>
+
+
+                                                                                <div class="product-box">
+                                                                                     <div class="img-box">
+                                                                                          <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                     </div>
+                                                                                     <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                     <div class="price-and-cart">
+                                                                                          <span class="price">85 lei</span>
+                                                                                          <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                     </div>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+
+                                                                      <!-- Linie de separare -->
+                                                                      <hr class="category-divider">
+
+
+                                                                      <!----Recomandat pentru carne----->
+                                                                      <div class="product-container">
+
+                                                                           <div id="recomandatcarne" class="category">
+                                                                                <h2>Recomandat pentru carne</h2>
+                                                                                <div class="product-content">
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+
+
+                                                                                     <div class="product-box">
+                                                                                          <div class="img-box">
+                                                                                               <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                          </div>
+                                                                                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <!-- Linie de separare -->
+                                                                           <hr class="category-divider">
+
+
+                                                                           <!-- legume la gratar -->
+                                                                           <div class="product-container">
+
+                                                                                <div id="legumegratar" class="category">
+                                                                                     <h2>Legume la gratar</h2>
+                                                                                     <div class="product-content">
+                                                                                          <div class="product-box">
+                                                                                               <div class="img-box">
+                                                                                                    <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                               </div>
+                                                                                               <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                               <div class="price-and-cart">
+                                                                                                    <span class="price">85 lei</span>
+                                                                                                    <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                               </div>
+                                                                                          </div>
+
+
+                                                                                          <div class="product-box">
+                                                                                               <div class="img-box">
+                                                                                                    <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                               </div>
+                                                                                               <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                               <div class="price-and-cart">
+                                                                                                    <span class="price">85 lei</span>
+                                                                                                    <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                               </div>
+                                                                                          </div>
+
+
+
+                                                                                          <div class="product-box">
+                                                                                               <div class="img-box">
+                                                                                                    <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                               </div>
+                                                                                               <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                               <div class="price-and-cart">
+                                                                                                    <span class="price">85 lei</span>
+                                                                                                    <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                               </div>
+                                                                                          </div>
+
+
+                                                                                          <div class="product-box">
+                                                                                               <div class="img-box">
+                                                                                                    <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                               </div>
+                                                                                               <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                               <div class="price-and-cart">
+                                                                                                    <span class="price">85 lei</span>
+                                                                                                    <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                               </div>
+                                                                                          </div>
+
+
+
+                                                                                          <div class="product-box">
+                                                                                               <div class="img-box">
+                                                                                                    <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                               </div>
+                                                                                               <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                               <div class="price-and-cart">
+                                                                                                    <span class="price">85 lei</span>
+                                                                                                    <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                               </div>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+
+                                                                                <!-- Linie de separare -->
+                                                                                <hr class="category-divider">
+
+
+
+                                                                                <!----Deserturi----->
+                                                                                <div class="product-container">
+
+                                                                                     <div id="desert" class="category">
+                                                                                          <h2>Deserturi</h2>
+
+
+                                                                                          <div class="product-content">
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\omletadin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\omletadefirmaocapte.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">127 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <div class="img-box">
+                                                                                                         <img src="assets\img\menu\dejun\ochiuridin2oua.jpg">
+                                                                                                    </div>
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+                                                                                          </div>
+                                                                                     </div>
+
+                                                                                     <!-- Linie de separare -->
+                                                                                     <hr class="category-divider">
+
+
+                                                                                     <!----Bauturi----->
+                                                                                     <div class="product-container">
+
+                                                                                          <div id="bautura" class="category">
+                                                                                               <h2>Bauturi</h2>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <h2 class="product-title">Ochiuri din 2 ouă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">85 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+
+
+                                                                                               <div class="product-box">
+                                                                                                    <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                                                    <div class="price-and-cart">
+                                                                                                         <span class="price">127 lei</span>
+                                                                                                         <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                                    </div>
+                                                                                               </div>
+                                                                                          </div>
+                                                                                     </div>
+
+                                                                                     <div class="product-box">
+                                                                                          <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">85 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+
+                                                                                     <div class="product-box">
+                                                                                          <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                                          <div class="price-and-cart">
+                                                                                               <span class="price">127 lei</span>
+                                                                                               <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <div class="product-box">
+                                                                                <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                                <div class="price-and-cart">
+                                                                                     <span class="price">85 lei</span>
+                                                                                     <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <div class="product-box">
+                                                                                <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                                <div class="price-and-cart">
+                                                                                     <span class="price">127 lei</span>
+                                                                                     <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">85 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+
+                                                                 <div class="product-box">
+                                                                      <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                                      <div class="price-and-cart">
+                                                                           <span class="price">127 lei</span>
+                                                                           <i class="ri-shopping-bag-line  add-cart"></i>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">85 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="product-box">
+                                                            <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                            <div class="price-and-cart">
+                                                                 <span class="price">127 lei</span>
+                                                                 <i class="ri-shopping-bag-line  add-cart"></i>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <h2 class="product-title">Omletă din 2 ouă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">85 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+
+                                             <div class="product-box">
+                                                  <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                                  <div class="price-and-cart">
+                                                       <span class="price">127 lei</span>
+                                                       <i class="ri-shopping-bag-line  add-cart"></i>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <h2 class="product-title">Omletă din 2 ouă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">85 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-box">
+                                        <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                                        <div class="price-and-cart">
+                                             <span class="price">127 lei</span>
+                                             <i class="ri-shopping-bag-line  add-cart"></i>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <h2 class="product-title">Omletă din 2 ouă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">85 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+
+                         <div class="product-box">
+                              <h2 class="product-title">Omletă de firmă, coaptă</h2>
+                              <div class="price-and-cart">
+                                   <span class="price">127 lei</span>
+                                   <i class="ri-shopping-bag-line  add-cart"></i>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+
+               <div id="preloader"></div>
+               <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+

@@ -147,6 +147,8 @@
     <Content Include="Content\animate.css\animate.css" />
     <Content Include="Content\animate.css\animate.min.css" />
     <Content Include="Content\aos\aos.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\stylemenu.css" />
     <Content Include="Content\forms\Readme.txt" />
     <Content Include="Content\img\09.jpg" />
     <Content Include="Content\img\apple-touch-icon.png" />
@@ -401,7 +403,6 @@
     <Content Include="Content\boxicons\css\boxicons.min.css" />
     <Content Include="Content\boxicons\css\transformations.css" />
     <Content Include="Content\boxicons\fonts\boxicons.svg" />
-    <Content Include="Content\css\style.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\glightbox\css\glightbox.css" />
@@ -411,6 +412,8 @@
     <Content Include="Content\isotope-layout\isotope.pkgd.js" />
     <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\scriptmeniu.js" />
     <Content Include="Scripts\validate.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\swiper\swiper-bundle.min.css" />
@@ -493,7 +496,6 @@
     <Content Include="Content\boxicons\fonts\boxicons.ttf" />
     <Content Include="Content\boxicons\fonts\boxicons.woff" />
     <Content Include="Content\boxicons\fonts\boxicons.woff2" />
-    <Content Include="Content\img\gallery\baza.avif" />
     <Content Include="bin\roslyn\csc.exe.config" />
     <Content Include="bin\roslyn\csc.rsp" />
     <Content Include="bin\roslyn\csi.exe.config" />
@@ -508,6 +510,8 @@
     <Content Include="bin\Sarkis.dll.config" />
     <Content Include="Content\forms\book-a-table.php" />
     <Content Include="Content\forms\contact.php" />
+    <Content Include="Content\img\gallery\baza.avif" />
+    <Content Include=".vs\Sarkis.csproj.dtbcache.json" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -527,7 +531,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -572,6 +575,10 @@
     <Content Include="Views\Shared\Meniu.cshtml" />
     <Content Include="Views\Shared\About.cshtml" />
     <Content Include="Views\Shared\Sali.cshtml" />
+    <Content Include="Views\Shared\Contact.cshtml" />
+    <Content Include="Views\Shared\Galerie.cshtml" />
+    <Content Include="Views\Shared\Rezervare.cshtml" />
+    <Content Include="Views\Shared\profile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
