@@ -41,5 +41,9 @@ namespace Sarkis.Controllers
           {
                return View();
           }
+          public ActionResult Authentification()
+          {
+               return View();
+          }
      }
 }

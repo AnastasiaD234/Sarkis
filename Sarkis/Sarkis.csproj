@@ -147,6 +147,8 @@
     <Content Include="Content\animate.css\animate.css" />
     <Content Include="Content\animate.css\animate.min.css" />
     <Content Include="Content\aos\aos.css" />
+    <Content Include="Content\css\authetification_style.css" />
+    <Content Include="Content\css\profilestyle.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\css\stylemenu.css" />
     <Content Include="Content\forms\Readme.txt" />
@@ -408,10 +410,12 @@
     <Content Include="Content\glightbox\css\glightbox.css" />
     <Content Include="Content\glightbox\css\glightbox.min.css" />
     <Content Include="Content\glightbox\js\glightbox.js" />
+    <Content Include="Scripts\authetification_style.js" />
     <Content Include="Scripts\glightbox.min.js" />
     <Content Include="Content\isotope-layout\isotope.pkgd.js" />
     <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\newFile.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Scripts\scriptmeniu.js" />
     <Content Include="Scripts\validate.js" />
@@ -530,7 +534,9 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -579,6 +585,8 @@
     <Content Include="Views\Shared\Galerie.cshtml" />
     <Content Include="Views\Shared\Rezervare.cshtml" />
     <Content Include="Views\Shared\profile.cshtml" />
+    <Content Include="Views\Auth\Authentification.cshtml" />
+    <Content Include="Views\Shared\Reservation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -591,6 +599,7 @@
     <Folder Include="Content\js\" />
     <Folder Include="Content\php-email-form\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Reservation\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

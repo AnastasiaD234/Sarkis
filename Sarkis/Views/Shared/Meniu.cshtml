@@ -1,4 +1,5 @@
 ﻿<!-- Bara de categorii produse -->
+
 <div class="sidebar">
      <div class="sidebar-title">Categorii</div>
      <div class="sidebar-content">
@@ -26,6 +27,7 @@
      </div>
 </div>
 
+
 <div class="cart">
      <h2 class="cart-title">Your Cart</h2>
      <div class="cart-content">
@@ -47,9 +49,14 @@
           <div class="total-title">Total</div>
           <div class="total-price">0 lei</div>
      </div>
-     <button class="btn-buy">Buy now</button>
+     <form action="/Reservation/Buy" method="post">
+          <button type="submit" class="btn-buy">Buy now</button>
+     </form>
      <i class="ri-close-line" id="cart-close"></i>
 </div>
+
+
+
 
 <section class="shop">
      <div class="product-container">
@@ -61,7 +68,7 @@
                <div class="product-content">
                     <div class="product-box">
                          <div class="img-box">
-                              <img src="~/Content/img/menu/ejun/ochiuridin2oua.jpg" alt="">
+                              <img src="~/Content/img/menu/dejun/ochiuridin2oua.jpg" alt="">
                          </div>
                          <h2 class="product-title">Ochiuri din 2 ouă</h2>
                          <div class="price-and-cart">
@@ -2572,9 +2579,14 @@
                          </div>
                     </div>
                </div>
+          </div>
+     </div>
+
+</section>
 
 
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-               <div id="preloader"></div>
-               <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 

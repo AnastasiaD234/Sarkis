@@ -106,6 +106,7 @@ const updateCartCount = (change) => {
 };
 
 
+
 const buyNowButton = document.querySelector(".btn-buy");
 buyNowButton.addEventListener("click", () => {
     const cartBoxes = cartContent.querySelectorAll(".cart-box");
@@ -122,7 +123,7 @@ buyNowButton.addEventListener("click", () => {
 
     if (!userLoggedIn) {
         alert("Trebuie să fii logat pentru a finaliza comanda.");
-        window.location.href = "authentification.html"; // Redirecționare către login
+         window.location.href = "/Auth/Authentification";// Redirecționare către login
         return;
     }
 
