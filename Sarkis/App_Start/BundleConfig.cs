@@ -34,13 +34,14 @@ namespace Sarkis.Web
              "~/Content/css/authetification_style.css", new CssRewriteUrlTransform()));
                bundles.Add(new StyleBundle("~/bundles/profile/css").Include(
            "~/Content/css/profilestyle.css", new CssRewriteUrlTransform()));
+            bundles.Add(new StyleBundle("~/bundles/rezervmeniu/css").Include(
+"~/Content/css/rezervare-meniu.css", new CssRewriteUrlTransform()));
 
 
 
 
 
-
-               bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
+            bundles.Add(new ScriptBundle("~/bundle/aos/js").Include(
                   "~/Scripts/aos.js"));
                bundles.Add(new ScriptBundle("~/bundle/bootstrap/js").Include(
                   "~/Scripts/bootstrap.min.js"));
@@ -59,9 +60,11 @@ namespace Sarkis.Web
                "~/Scripts/scriptmeniu.js"));
                bundles.Add(new ScriptBundle("~/bundle/auth/js").Include(
           "~/Scripts/authetification_style.js"));
+            bundles.Add(new ScriptBundle("~/bundle/rezerv/js").Include(
+        "~/Scripts/script.js"));
 
 
-          }
+        }
 
-     }
+    }
 }

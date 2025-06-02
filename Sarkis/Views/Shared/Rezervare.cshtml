@@ -1,56 +1,53 @@
-﻿
+﻿@model Sarkis.Models.ReservareModel
 @{
-     ViewBag.Title = "Rezervare";
+    Layout = null;
 }
 
+<!-- MODAL DE REZERVARE -->
+<div id="reservation-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <button id="close-modal" class="close-button">&times;</button>
+        <h3>Finalizează rezervarea</h3>
 
-<!-- ======= Book A Table Section ======= -->
-<section id="book-a-table" class="book-a-table">
-     <div class="container" data-aos="fade-up">
+        @using (Html.BeginForm("Create", "Reservations", FormMethod.Post, new { id = "reservation-form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-          <div class="section-title">
-               <h2>Rezervarea</h2>
-               <p>Book a Table</p>
-          </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.EventDate)
+        @Html.TextBoxFor(m => m.EventDate, new { id = "event-date", type = "date", @class = "form-control", min = DateTime.Now.ToString("yyyy-MM-dd") })
+        @Html.ValidationMessageFor(m => m.EventDate, "", new { @class = "text-danger" })
+    </div>
 
-          <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-               <div class="row">
-                    <div class="col-lg-4 col-md-6 form-group">
-                         <input type="text" name="name" class="form-control" id="name" placeholder="Numele" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                         <div class="validate"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                         <input type="email" class="form-control" name="email" id="email" placeholder="Email-ul" data-rule="email" data-msg="Please enter a valid email">
-                         <div class="validate"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                         <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefonul" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                         <div class="validate"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group mt-3">
-                         <input type="text" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                         <div class="validate"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group mt-3">
-                         <input type="text" class="form-control" name="time" id="time" placeholder="Timpul" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                         <div class="validate"></div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group mt-3">
-                         <input type="number" class="form-control" name="people" id="people" placeholder="Nr. de persoane" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                         <div class="validate"></div>
-                    </div>
-               </div>
-               <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Detalii"></textarea>
-                    <div class="validate"></div>
-               </div>
-               <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Rezervarea a fost acceptată.Vom reveni cu un apel sau mesaj pe email. Mulțumim!</div>
-               </div>
-               <div class="text-center"><button type="submit">Rezervarea</button></div>
-          </form>
+    <div class="form-group">
+        @Html.LabelFor(m => m.EventTime)
+        @Html.TextBoxFor(m => m.EventTime, new { id = "event-time", type = "time", @class = "form-control", min = DateTime.Now.ToString("HH:mm") })
 
-     </div>
-</section><!-- End Book A Table Section -->
+        @Html.ValidationMessageFor(m => m.EventTime, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.NumPersons)
+        @Html.TextBoxFor(m => m.NumPersons, new { id = "num-persons", type = "number", @class = "form-control", min = "1" })
+
+        @Html.ValidationMessageFor(m => m.NumPersons, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.EventType)
+        @Html.DropDownListFor(m => m.EventType, new SelectList(new[] { "", "Botez", "Nuntă", "Aniversare", "Altul" }), new { id = "event-type", @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.EventType, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber)
+        @Html.TextBoxFor(m => m.PhoneNumber, new { id = "phone-number", type = "tel", @class = "form-control", placeholder = "07xx xxx xxx" })
+        @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+    </div>
+
+            <button type="submit" class="btn btn-primary">Rezervă</button>
+        }
+    </div>
+</div>
