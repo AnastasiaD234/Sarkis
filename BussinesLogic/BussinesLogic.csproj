@@ -53,10 +53,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBModel\ReservareContext.cs" />
+    <Compile Include="DBModel\RezervareaContext.cs" />
     <Compile Include="DBModel\SessionContext.cs" />
     <Compile Include="Migrations\202505171052079_InitialCreate.cs" />
     <Compile Include="Migrations\202505171052079_InitialCreate.Designer.cs">
       <DependentUpon>202505171052079_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506030724401_InitialCreate1.cs" />
+    <Compile Include="Migrations\202506030724401_InitialCreate1.Designer.cs">
+      <DependentUpon>202506030724401_InitialCreate1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Sarkis.BussinesLogic.cs" />
@@ -86,6 +91,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202505171052079_InitialCreate.resx">
       <DependentUpon>202505171052079_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506030724401_InitialCreate1.resx">
+      <DependentUpon>202506030724401_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

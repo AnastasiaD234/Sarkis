@@ -62,9 +62,11 @@ namespace Sarkis.Web
           "~/Scripts/authetification_style.js"));
             bundles.Add(new ScriptBundle("~/bundle/rezerv/js").Include(
         "~/Scripts/script.js"));
+               bundles.Add(new ScriptBundle("~/bundle/rezervare/js").Include(
+        "~/Scripts/rezervare.js"));
 
 
-        }
+          }
 
     }
 }

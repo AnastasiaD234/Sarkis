@@ -55,9 +55,26 @@ namespace Sarkis.Controllers
             _db.ReserTable.Add(entity);
             _db.SaveChanges();
 
-            
-            return RedirectToAction("Authentification", new { id = entity.ReservationId });
+            if (model.BucateComandate != null && model.BucateComandate.Any())
+            {
+                foreach (var item in model.BucateComandate)
+                {
+                    var bucat = new BucataComandata
+                    {
+                        ReserTable = entity,
+                        Nume = item.Nume,
+                        Pret = item.Pret,
+                        Cantitate = item.Cantitate
+                    };
+
+                    _db.BucateComandate.Add(bucat);
+                }
+                _db.SaveChanges();
+            }
+       
+            return RedirectToAction("Authentification","Auth", new { id = entity.ReservationId });
         }
+
 
         
         public ActionResult Confirm(int id)

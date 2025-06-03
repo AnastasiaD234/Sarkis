@@ -434,6 +434,7 @@
     <Content Include="Scripts\isotope.pkgd.min.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\newFile.js" />
+    <Content Include="Scripts\rezervare.js" />
     <Content Include="Scripts\script.js" />
     <Content Include="Scripts\scriptmeniu.js" />
     <Content Include="Scripts\validate.js" />
@@ -573,6 +574,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\RezervareSimplaController.cs" />
     <Compile Include="Extension\HttpContextExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -580,6 +582,7 @@
     <Compile Include="Models\AuthViewModel.cs" />
     <Compile Include="Models\ProducModel.cs" />
     <Compile Include="Models\ReservareModel.cs" />
+    <Compile Include="Models\RezervareSimplaModel.cs" />
     <Compile Include="Models\UserData.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Models\UserRegister.cs" />
@@ -609,6 +612,7 @@
     <Content Include="Views\Auth\Authentification.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddProduct.cshtml" />
+    <Content Include="Views\Shared\Rezervareasimpla.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -622,6 +626,7 @@
     <Folder Include="Content\php-email-form\" />
     <Folder Include="Views\Register\" />
     <Folder Include="Views\Reservation\" />
+    <Folder Include="Views\RezervareSimpla\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BussinesLogic\BussinesLogic.csproj">

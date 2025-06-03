@@ -14,40 +14,43 @@
             @Html.AntiForgeryToken()
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.EventDate)
-        @Html.TextBoxFor(m => m.EventDate, new { id = "event-date", type = "date", @class = "form-control", min = DateTime.Now.ToString("yyyy-MM-dd") })
-        @Html.ValidationMessageFor(m => m.EventDate, "", new { @class = "text-danger" })
-    </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.EventDate)
+                @Html.TextBoxFor(m => m.EventDate, new { id = "event-date", type = "date", @class = "form-control", min = DateTime.Now.ToString("yyyy-MM-dd") })
+                @Html.ValidationMessageFor(m => m.EventDate, "", new { @class = "text-danger" })
+            </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.EventTime)
-        @Html.TextBoxFor(m => m.EventTime, new { id = "event-time", type = "time", @class = "form-control", min = DateTime.Now.ToString("HH:mm") })
+            <div class="form-group">
+                @Html.LabelFor(m => m.EventTime)
+                @Html.TextBoxFor(m => m.EventTime, new { id = "event-time", type = "time", @class = "form-control", min = DateTime.Now.ToString("HH:mm") })
 
-        @Html.ValidationMessageFor(m => m.EventTime, "", new { @class = "text-danger" })
-    </div>
+                @Html.ValidationMessageFor(m => m.EventTime, "", new { @class = "text-danger" })
+            </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.NumPersons)
-        @Html.TextBoxFor(m => m.NumPersons, new { id = "num-persons", type = "number", @class = "form-control", min = "1" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.NumPersons)
+                @Html.TextBoxFor(m => m.NumPersons, new { id = "num-persons", type = "number", @class = "form-control", min = "1" })
 
-        @Html.ValidationMessageFor(m => m.NumPersons, "", new { @class = "text-danger" })
-    </div>
+                @Html.ValidationMessageFor(m => m.NumPersons, "", new { @class = "text-danger" })
+            </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.EventType)
-        @Html.DropDownListFor(m => m.EventType, new SelectList(new[] { "", "Botez", "Nuntă", "Aniversare", "Altul" }), new { id = "event-type", @class = "form-control" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.EventType)
+                @Html.DropDownListFor(m => m.EventType, new SelectList(new[] { "", "Botez", "Nuntă", "Aniversare", "Altul" }), new { id = "event-type", @class = "form-control" })
 
-        @Html.ValidationMessageFor(m => m.EventType, "", new { @class = "text-danger" })
-    </div>
+                @Html.ValidationMessageFor(m => m.EventType, "", new { @class = "text-danger" })
+            </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.PhoneNumber)
-        @Html.TextBoxFor(m => m.PhoneNumber, new { id = "phone-number", type = "tel", @class = "form-control", placeholder = "07xx xxx xxx" })
-        @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
-    </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PhoneNumber)
+                @Html.TextBoxFor(m => m.PhoneNumber, new { id = "phone-number", type = "tel", @class = "form-control", placeholder = "07xx xxx xxx" })
+                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+            </div>
+            <input type="hidden" id="numeBucate" name="NumeBucate" />
+            <input type="hidden" id="cantitatiBucate" name="CantitatiBucate" />
+            <input type="hidden" id="preturiBucate" name="PreturiBucate" />
 
-            <button type="submit" class="btn btn-primary">Rezervă</button>
+            <button type="submit" id="reserve-button">Rezervă</button>
         }
     </div>
 </div>

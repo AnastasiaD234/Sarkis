@@ -34,5 +34,10 @@ namespace Domain.Entities.User
         [Phone]
         [StringLength(20)]
         public string PhoneNumber { get; set; }
+
+
+        public virtual List<BucataComandata> BucateComandate { get; set; }
+        
+
     }
 }

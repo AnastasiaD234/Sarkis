@@ -1,0 +1,79 @@
+﻿
+
+@model Sarkis.Models.RezervareSimplaModel
+@{
+     ViewBag.Title = "Rezervareasimpla";
+}
+
+
+<section class="section-negru"></section>
+
+<div class="container" data-aos="fade-up">
+     <div class="section-title text-center">
+          <h2>Rezervare Banchet</h2>
+          <p>Completează formularul pentru a face o rezervare</p>
+     </div>
+
+     @using (Html.BeginForm("CreateBanquet", "RezervareSimpla", FormMethod.Post, new { id = "banchet-form" }))
+     {
+          @Html.AntiForgeryToken()
+          @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+          <div class="row gy-3">
+
+               <div class="col-md-6">
+                    @Html.LabelFor(m => m.TipBanchet, htmlAttributes: new { @class = "form-label" })
+                    @Html.DropDownListFor(m => m.TipBanchet,
+                        new SelectList(new[] {
+                            new { Value = "", Text = "Alege tipul" },
+                            new { Value = "nunta", Text = "Nuntă" },
+                            new { Value = "cumetrie", Text = "Cumetrie" },
+                            new { Value = "majorat", Text = "Majorat" },
+                            new { Value = "corporativ", Text = "Corporate" },
+                            new { Value = "altul", Text = "Altul" }
+                        }, "Value", "Text"),
+                        new { @class = "form-select", required = "required" })
+                    @Html.ValidationMessageFor(m => m.TipBanchet, "", new { @class = "text-danger" })
+               </div>
+
+               <div class="col-md-6">
+                    @Html.LabelFor(m => m.NrPersoane, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.NrPersoane, new { @class = "form-control", type = "number", min = "1", required = "required" })
+                    @Html.ValidationMessageFor(m => m.NrPersoane, "", new { @class = "text-danger" })
+               </div>
+
+               <div class="col-md-6">
+                    @Html.LabelFor(m => m.DataRezervare, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.DataRezervare, new { @class = "form-control", type = "date", min = DateTime.Now.ToString("yyyy-MM-dd"), required = "required" })
+                    @Html.ValidationMessageFor(m => m.DataRezervare, "", new { @class = "text-danger" })
+               </div>
+
+               <div class="col-md-6">
+                    @Html.LabelFor(m => m.OraRezervare, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.OraRezervare, new { @class = "form-control", type = "time", required = "required" })
+                    @Html.ValidationMessageFor(m => m.OraRezervare, "", new { @class = "text-danger" })
+               </div>
+
+               <div class="col-md-6">
+                    @Html.LabelFor(m => m.NrTelefon, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.NrTelefon, new
+                    {
+                        @class = "form-control",
+                        type = "tel",
+                        pattern = "[0-9]{9}",
+                        placeholder = "07xx xxx xxx",
+                        required = "required"
+                    })
+                    @Html.ValidationMessageFor(m => m.NrTelefon, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+          <div class="text-center mt-4">
+               <button type="submit" class="btn btn-primary" id="banchet-form">Trimite cererea</button>
+               
+          </div>
+     }
+</div>
+
+<section class="section-negru"></section>
+

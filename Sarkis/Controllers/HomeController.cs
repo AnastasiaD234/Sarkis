@@ -33,7 +33,7 @@ namespace Sarkis.Controllers
           {
                return View();
           }
-          public ActionResult Rezervare()
+          public ActionResult Rezervareasimpla()
           {
                return View();
           }

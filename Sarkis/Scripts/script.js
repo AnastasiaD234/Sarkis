@@ -9,6 +9,16 @@ addCartButtons.forEach(button => {
     button.addEventListener("click", event => {
         const productBox = event.target.closest(".product-box");
         addToCart(productBox);
+        const name = productBox.querySelector(".product-title").textContent.trim();
+        const priceText = productBox.querySelector(".price").textContent.trim();
+        const price = parseFloat(priceText.replace("lei", "").trim());
+
+        const existing = cartItems.find(item => item.nume === name);
+        if (existing) {
+            existing.cantitate++;
+        } else {
+            cartItems.push({ nume: name, pret: price, cantitate: 1 });
+        }
     });
 });
 
@@ -69,7 +79,7 @@ const addToCart = (productBox) => {
         updateTotalPrice();
     });
     updateCartCount(1);
-    
+
     updateTotalPrice();
 };
 
@@ -93,6 +103,7 @@ const updateTotalPrice = () => {
 };
 
 let cartItemCount = 0;
+let cartItems = [];
 const updateCartCount = (change) => {
     const cartItemCountBadge = document.querySelector(".cart-item-count");
     cartItemCount += change;
@@ -134,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setMinDateTime();
     });
 
-    closeModalBtn.addEventListener("click", function() {
+    closeModalBtn.addEventListener("click", function () {
         modal.style.display = "block";
     });
 
@@ -148,8 +159,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isAuthenticated && isLoggedIn) {
             alert("Trebuie să fii autentificat pentru a face o rezervare.");
-            window.location.href = "/View/Auth/Authentification"; 
-            return; 
+            window.location.href = "/View/Auth/Authentification";
+            return;
         }
 
         const dateValue = eventDateInput.value;
@@ -182,51 +193,72 @@ document.addEventListener("DOMContentLoaded", function () {
 
         modal.style.display = "none";
     });
-}); 
- 
+});
+const rezervareButton = document.getElementById("reserve-button");
+if (rezervareButton) {
+    rezervareButton.addEventListener("click", () => {
+        const form = document.getElementById("reservation-form");
+        if (!form) return;
+
+        // Șterge câmpurile vechi
+        form.querySelectorAll(".hidden-bucate").forEach(el => el.remove());
+
+        // Adaugă câmpuri hidden pentru fiecare bucată
+        cartItems.forEach((item, index) => {
+            ["nume", "pret", "cantitate"].forEach(key => {
+                const input = document.createElement("input");
+                input.type = "hidden";
+                input.name = `BucateComandate[${index}].${key.charAt(0).toUpperCase() + key.slice(1)}`;
+                input.value = item[key];
+                input.classList.add("hidden-bucate");
+                form.appendChild(input);
+            });
+        });
+    });
+}
 
 
 /**
    * Preloader
    */
-  let preloader = select('#preloader');
-  if (preloader) {
+let preloader = select('#preloader');
+if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove()
+        preloader.remove()
     });
-  }
+}
 
 
-  /**
-   * Menu isotope and filter
-   */
-  window.addEventListener('load', () => {
+/**
+ * Menu isotope and filter
+ */
+window.addEventListener('load', () => {
     let menuContainer = select('.menu-container');
     if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
-      });
-
-      let menuFilters = select('#menu-flters li', true);
-
-      on('click', '#menu-flters li', function(e) {
-        e.preventDefault();
-        menuFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
+        let menuIsotope = new Isotope(menuContainer, {
+            itemSelector: '.menu-item',
+            layoutMode: 'fitRows'
         });
-        this.classList.add('filter-active');
 
-        menuIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        menuIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+        let menuFilters = select('#menu-flters li', true);
+
+        on('click', '#menu-flters li', function (e) {
+            e.preventDefault();
+            menuFilters.forEach(function (el) {
+                el.classList.remove('filter-active');
+            });
+            this.classList.add('filter-active');
+
+            menuIsotope.arrange({
+                filter: this.getAttribute('data-filter')
+            });
+            menuIsotope.on('arrangeComplete', function () {
+                AOS.refresh()
+            });
+        }, true);
     }
 
-  });
+});
 
 
 

@@ -1,58 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\acer\\Desktop\\trynow2\\",
+  "WorkspaceRootPath": "C:\\Users\\acer\\Desktop\\Sarkis-main\\Sarkis-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\Sarkis-main\\Sarkis-main\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\scripts\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\scripts\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|c:\\users\\acer\\desktop\\trynow2\\sarkis\\views\\shared\\rezervare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\rezervare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|c:\\users\\acer\\desktop\\trynow2\\sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\models\\reservaremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\models\\reservaremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\views\\auth\\authentification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\auth\\authentification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE488F27-7AE8-40C5-A710-2B9BC6C81501}|Domain\\Domain.csproj|C:\\Users\\acer\\Desktop\\trynow2\\domain\\entities\\user\\resertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE488F27-7AE8-40C5-A710-2B9BC6C81501}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user\\resertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|C:\\Users\\acer\\Desktop\\trynow2\\bussineslogic\\dbmodel\\reservarecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\dbmodel\\reservarecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|C:\\Users\\acer\\Desktop\\trynow2\\sarkis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|C:\\Users\\acer\\Desktop\\trynow2\\bussineslogic\\dbmodel\\sessioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\dbmodel\\sessioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,170 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\Sarkis-main\\Sarkis-main\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\Sarkis-main\\Sarkis-main\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvzAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAIwDEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T19:00:31.993Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "Sarkis\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-31T06:44:55.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rezervare.cshtml",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\Rezervare.cshtml",
-              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Rezervare.cshtml",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\Rezervare.cshtml",
-              "RelativeToolTip": "Sarkis\\Views\\Shared\\Rezervare.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAACOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T19:51:35.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Authentification.cshtml",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Auth\\Authentification.cshtml",
-              "RelativeDocumentMoniker": "Sarkis\\Views\\Auth\\Authentification.cshtml",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Auth\\Authentification.cshtml",
-              "RelativeToolTip": "Sarkis\\Views\\Auth\\Authentification.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T19:32:42.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "script.js",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Scripts\\script.js",
-              "RelativeDocumentMoniker": "Sarkis\\Scripts\\script.js",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Scripts\\script.js",
-              "RelativeToolTip": "Sarkis\\Scripts\\script.js",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAiwMYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-30T19:22:35.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReserTable.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Domain\\Entities\\User\\ReserTable.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\User\\ReserTable.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Domain\\Entities\\User\\ReserTable.cs",
-              "RelativeToolTip": "Domain\\Entities\\User\\ReserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T19:21:31.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SessionContext.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\BussinesLogic\\DBModel\\SessionContext.cs",
-              "RelativeDocumentMoniker": "BussinesLogic\\DBModel\\SessionContext.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\BussinesLogic\\DBModel\\SessionContext.cs",
-              "RelativeToolTip": "BussinesLogic\\DBModel\\SessionContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T19:15:30.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "Sarkis\\Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "Sarkis\\Controllers\\ReservationController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwDoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T19:06:10.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReservareModel.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Models\\ReservareModel.cs",
-              "RelativeDocumentMoniker": "Sarkis\\Models\\ReservareModel.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Models\\ReservareModel.cs",
-              "RelativeToolTip": "Sarkis\\Models\\ReservareModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T18:24:21.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReservareContext.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\BussinesLogic\\DBModel\\ReservareContext.cs",
-              "RelativeDocumentMoniker": "BussinesLogic\\DBModel\\ReservareContext.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\BussinesLogic\\DBModel\\ReservareContext.cs",
-              "RelativeToolTip": "BussinesLogic\\DBModel\\ReservareContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T18:10:46.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Meniu.cshtml",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\Meniu.cshtml",
-              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Meniu.cshtml",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Views\\Shared\\Meniu.cshtml",
-              "RelativeToolTip": "Sarkis\\Views\\Shared\\Meniu.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T10:47:19.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Sarkis\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Sarkis\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T10:38:52.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Sarkis\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\trynow2\\Sarkis\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Sarkis\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T09:06:03.273Z"
             }
           ]
         }

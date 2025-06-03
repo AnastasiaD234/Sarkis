@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities.User;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -31,5 +32,7 @@ namespace Sarkis.Models
         [Phone(ErrorMessage = "Număr de telefon invalid")]
         [Display(Name = "Număr de telefon")]
         public string PhoneNumber { get; set; }
+        public List<BucataComandata> BucateComandate { get; set; }
     }
+   
 }

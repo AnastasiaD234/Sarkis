@@ -6,6 +6,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Domain.Entities.User.ReserTable;
 
 namespace BussinesLogic.DBModel
 {
@@ -14,7 +15,8 @@ namespace BussinesLogic.DBModel
         public ReservareContext() : base("name=Sarkis")
         {
         }
-
+        
         public virtual DbSet<ReserTable> ReserTable { get; set; }
+        public DbSet<BucataComandata> BucateComandate { get; set; }
     }
 }
