@@ -1,6 +1,7 @@
 ﻿
+@model Sarkis.Models.ContactModel
 @{
-     ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact";
 }
 
 
@@ -8,81 +9,126 @@
 </section>
 <!-- Vendor JS Files -->
 <section id="contact" class="contact">
-     <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
-          <div class="section-title">
-          
-               <p>Contact Us</p>
-          </div>
-     </div>
+        <div class="section-title">
+
+            <p>Contact Us</p>
+        </div>
+    </div>
 
 
-     <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
-          <div class="row mt-5">
+        <div class="row mt-5">
 
-               <div class="col-lg-4">
-                    <div class="info">
-                         <div class="address">
-                              <i class="bi bi-geo-alt"></i>
-                              <h4>Locația:</h4>
-                              <p>Strada Alexei Mateevici 113A, Chișinău</p>
-                         </div>
-
-                         <div class="open-hours">
-                              <i class="bi bi-clock"></i>
-                              <h4>Deschis:</h4>
-                              <p>
-                                   Monday-Saturday:<br>
-                                   24/7
-                              </p>
-                         </div>
-
-                         <div class="email">
-                              <i class="bi bi-envelope"></i>
-                              <h4>Email:</h4>
-                              <p>bookmytable@example.com</p>
-                         </div>
-
-                         <div class="phone">
-                              <i class="bi bi-phone"></i>
-                              <h4>Call:</h4>
-                              <p>+373 69 22 4444</p>
-                         </div>
-
+            <div class="col-lg-4">
+                <div class="info">
+                    <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Locația:</h4>
+                        <p>Strada Alexei Mateevici 113A, Chișinău</p>
                     </div>
 
-               </div>
+                    <div class="open-hours">
+                        <i class="bi bi-clock"></i>
+                        <h4>Deschis:</h4>
+                        <p>
+                            Monday-Saturday:<br>
+                            24/7
+                        </p>
+                    </div>
 
-               <div class="col-lg-8 mt-5 mt-lg-0">
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>bookmytable@example.com</p>
+                    </div>
 
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                         <div class="row">
-                              <div class="col-md-6 form-group">
-                                   <input type="text" name="name" class="form-control" id="name" placeholder="Numele" required>
-                              </div>
-                              <div class="col-md-6 form-group mt-3 mt-md-0">
-                                   <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                              </div>
-                         </div>
-                         <div class="form-group mt-3">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subiectul" required>
-                         </div>
-                         <div class="form-group mt-3">
-                              <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-                         </div>
-                         <div class="my-3">
-                              <div class="loading">Loading</div>
-                              <div class="error-message"></div>
-                              <div class="sent-message">Mesajul a fost trimis.Felicitari!</div>
-                         </div>
-                         <div class="text-center"><button type="submit">Trimite mesajul</button></div>
-                    </form>
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+373 69 22 4444</p>
+                    </div>
 
-               </div>
+                </div>
 
-          </div>
+            </div>
 
-     </div>
-</section><!-- End Contact Section -->
-    </main><!-- End #main -->
+
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+                @using (Html.BeginForm("Send", "Contact", FormMethod.Post, new { @class = "php-email-form", id = "contact-form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Numele" })
+                            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "Subiectul" })
+                        @Html.ValidationMessageFor(m => m.Subject, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group mt-3">
+                        @Html.TextAreaFor(m => m.Message, 8, 50, new { @class = "form-control", placeholder = "Mesajul" })
+                        @Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="button" id="trimiteContact">Trimite mesajul</button>
+                    </div>
+
+                    <div id="mesaj-succes" class="alert alert-success mt-3" style="display: none;">
+                        Mesajul a fost trimis cu succes!
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contact-form");
+        const trimiteBtn = document.getElementById("trimiteContact");
+        const mesajBox = document.getElementById("mesaj-succes");
+
+        if (trimiteBtn && contactForm) {
+            trimiteBtn.addEventListener("click", function () {
+                const formData = new FormData(contactForm);
+                const token = contactForm.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                fetch ("@Url.Action("Send", "Contact")", {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "RequestVerificationToken": token
+                    }
+                })
+                    .then(response => {
+                        if (!response.ok) throw new Error("Eroare la trimiterea mesajului.");
+                        return response.text();
+                    })
+                    .then(data => {
+                        if (data === "success") {
+                            mesajBox.style.display = "block";
+                            contactForm.reset();
+                        } else {
+                            alert("Eroare: mesaj invalid.");
+                        }
+                    })
+                    .catch(err => {
+                        alert("Eroare: " + err.message);
+                    });
+            });
+        }
+    });
+</script>

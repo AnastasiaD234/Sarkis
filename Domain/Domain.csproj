@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\User\BucataComandata.cs" />
+    <Compile Include="Entities\User\ContactTable.cs" />
     <Compile Include="Entities\User\ReserTable.cs" />
     <Compile Include="Entities\User\RezerTable.cs" />
     <Compile Include="Entities\User\Session.cs" />

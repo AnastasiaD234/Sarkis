@@ -572,6 +572,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\RezervareSimplaController.cs" />
@@ -580,6 +581,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AuthViewModel.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\ProducModel.cs" />
     <Compile Include="Models\ReservareModel.cs" />
     <Compile Include="Models\RezervareSimplaModel.cs" />
