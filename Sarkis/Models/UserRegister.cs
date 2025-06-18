@@ -24,6 +24,6 @@ namespace Sarkis.Models
           [Compare("Password", ErrorMessage = "Passwords do not match.")]
           public string ConfirmPassword { get; set; }
 
-          public bool IsAdmin { get; set; }
+
      }
 }

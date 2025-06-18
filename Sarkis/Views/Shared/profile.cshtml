@@ -4,29 +4,43 @@
 }
 
 <section class="profile-section">
-     <div class="profile-container">
-          <div class="profile-buttons">
-               <a href="orders.html" class="profile-btn">
-                    <div class="profile-icon">
-                         <i class="ri-article-line"></i>
-                    </div>
-                    <div class="profile-text">Istoricul comenzilor</div>
-               </a>
+    <div class="profile-container">
+        <div class="profile-buttons">
+            <a class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-user-3-fill"></i>
+                </div>
+                <div class="profile-text">
+                    <span id="user-name">@ViewBag.UserName</span>
+                </div>
+            </a>
+            <a class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-mail-send-line"></i>
+                </div>
+                <div class="profile-text">
+                    <span id="user-email">@ViewBag.UserEmail</span>
+                </div>
+            </a>
+            <a href="@Url.Action("Comenzi","Home")" class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-article-line"></i>
+                </div>
+                <div class="profile-text">Istoricul comenzilor</div>
+            </a>
+            <a  href="@Url.Action("Setari","Home")" class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-folder-settings-line"></i>
+                </div>
+                <div class="profile-text">Settings</div>
+            </a>
 
-               <a href="settings.html" class="profile-btn">
-                    <div class="profile-icon">
-                         <i class="ri-settings-5-line"></i>
-                    </div>
-                    <div class="profile-text">Setări și date personale</div>
-               </a>
-
-               <a href="logout.html" class="profile-btn">
-                    <div class="profile-text">Deconectează-te</div>
-               </a>
-          </div>
-     </div>
+            <a href="@Url.Action("Logout", "Auth")" class="profile-btn">
+                <div class="profile-text">Deconectează-te</div>
+            </a>
+        </div>
+    </div>
 </section>
-
 
 
 

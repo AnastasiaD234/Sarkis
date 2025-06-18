@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Comenzi";
+}
+
+<section>
+    <div class="container">
+        <h2>Istoric Comenzi</h2>
+        <div class="filters">
+            <label for="dateFilter">Filtru după dată:</label>
+            <input type="date" id="dateFilter">
+
+            <label for="typeFilter">Filtru după tip:</label>
+            <select id="typeFilter">
+                <option value="">Toate</option>
+                <option value="banchet">Banchet</option>
+                <option value="zi_nastere">Zi de naștere</option>
+                <option value="nunta">Nuntă</option>
+            </select>
+            <button onclick="filterOrders()">Filtrează</button>
+        </div>
+    </div>
+</section>

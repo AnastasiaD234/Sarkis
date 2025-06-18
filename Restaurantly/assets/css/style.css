@@ -442,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  padding-top: 110px;
+  padding-top: 10px;
 }
 
 @media (max-width: 992px) {
@@ -1303,4 +1303,93 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+/*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+.profile-container {
+  background: #d3af71;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  color: #d3af71;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+.profile-btnn:hover {
+  background-color: #555;
+}
+.profile-icon {
+  font-size: 24px;
+}
+/* Stiluri pentru input-uri din formular */
+.profile-btn input {
+  background-color: black;     /* fundal negru */
+  color: white;                /* text alb */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Culoarea textului din placeholder */
+.profile-btn input::placeholder {
+  color: white;
+  opacity: 0.7; /* puțin transparent, ca să arate ca placeholder */
+}
+
+/* Pune secțiunea mai jos pe pagină */
+.filters {
+  margin-top: 100px; /* ajustează după nevoie */
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap; /* pentru responsive */
+}
+
+/* Stiluri pentru input de dată, select și buton */
+.filters input[type="date"],
+.filters select,
+.filters button {
+  background-color: #ffffff; /* fundal auriu */
+  color: rgb(18, 18, 18);              /* text alb */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Culoare pentru textul din placeholder sau interior */
+.filters input[type="date"]::placeholder {
+  color: white;
 }

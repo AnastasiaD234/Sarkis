@@ -1,5 +1,7 @@
 ﻿using BussinesLogic.DBModel;
+using BussinesLogic.Interfaces;
 using Domain.Entities.User;
+using Sarkis.BussinesLogic;
 using Sarkis.Models;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,9 @@ namespace Sarkis.Controllers
      public class RezervareSimplaController : Controller
      {
           private readonly RezervareaContext _db;
+        private readonly ISession _session = new SessionBL();
 
-          public RezervareSimplaController()
+        public RezervareSimplaController()
           {
 
                _db = new RezervareaContext();
@@ -32,7 +35,12 @@ namespace Sarkis.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateBanquet(RezervareSimplaModel model)
           {
-               if (!ModelState.IsValid)
+            if (Session["UserId"] == null)
+            {
+                TempData["RezervareModel"] = model;
+                return RedirectToAction("Authentification", "Auth");
+            }
+            if (!ModelState.IsValid)
                {
 
                     return View(model);
@@ -54,8 +62,8 @@ namespace Sarkis.Controllers
                _db.RezerTable.Add(entity);
                _db.SaveChanges();
 
-
-               return RedirectToAction("Authentification", "Auth", new { id = entity.RezervationId });
+            TempData["SuccessMessage"] = "Rezervarea a fost trimisă cu succes!";
+            return RedirectToAction("Index", "Home");
           }
 
 

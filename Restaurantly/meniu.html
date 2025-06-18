@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Sarkis Rzestaurant - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>La Sarkis Rzestaurant - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -25,14 +25,25 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/stylemenu.css" rel="stylesheet">
+  <link href="assets/css/rezervare-meniu.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/stylemenu.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <!-- =======================================================
+  * Template Name: Restaurantly - v3.1.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-      <!-- ======= Top Bar ======= -->
+  <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
 
@@ -45,25 +56,26 @@
     </div>
   </div>
 
-
+  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-            <h1 class="logo me-auto me-lg-0"><a href="index.html">Book my Table</a></h1>
-      
-            <nav id="navbar" class="navbar order-last order-lg-0">
-              <ul>
-                <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-                <li><a class="nav-link scrollto" href="about.html">Despre</a></li>
-                <li><a class="nav-link scrollto" href="meniu.html">Menu</a></li>
-                <li><a class="nav-link scrollto" href="places.html">Săli</a></li>
-                <li><a class="nav-link scrollto" href="galerie.html">Galerie</a></li>
-                <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                <li><a class="nav-link scrollto profile-icon" href="profile.html"><i class="ri-user-line"></i></a></li>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Book my Table</a></h1>
 
-              </ul>
-              <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">Despre</a></li>
+          <li><a class="nav-link scrollto" href="meniu.html">Menu</a></li>
+          <li><a class="nav-link scrollto" href="places.html">Săli</a></li>
+          <li><a class="nav-link scrollto" href="galerie.html">Galerie</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="rezervare.html">Rezervare</a></li>
+          <li><a class="nav-link scrollto profile-icon" href="profile.html"><i class="ri-user-line"></i></a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
         <div id="cart-icon">
             <i class="ri-shopping-bag-line"></i>
             <span class="cart-item-count"></span>
@@ -120,9 +132,10 @@
             <div class="total-title">Total</div>
             <div class="total-price">0 lei</div>
         </div>
-        <button class="btn-buy">Buy now</button>
+        <button class="btn-buy" id="buy-now-button">Next</button>
         <i class="ri-close-line" id="cart-close"></i>
     </div>
+
 
     <section class="shop">
         <div class="product-container">
@@ -2644,6 +2657,56 @@
 
     
 
+
+<!-- MODAL DE REZERVARE -->
+<div id="reservation-modal" class="modal">
+  <div class="modal-content">
+    <button id="close-modal" class="close-button">&times;</button>
+
+    <h3>Finalizează rezervarea</h3>
+
+    <form id="reservation-form">
+      <label>
+        <span>Data evenimentului:</span><br>
+        <input type="date" id="event-date" required>
+      </label>
+
+      <label>
+        <span>Ora evenimentului:</span><br>
+        <input type="time" id="event-time" required>
+      </label>
+
+      <label>
+        <span>Număr persoane:</span><br>
+        <input type="number" id="num-persons" min="1" value="1" required>
+      </label>
+
+      <label>
+        <span>Tipul evenimentului:</span><br>
+        <select id="event-type" required>
+          <option value="">-- Alege tipul --</option>
+          <option value="Botez">Botez</option>
+          <option value="Nuntă">Nuntă</option>
+          <option value="Aniversare">Aniversare</option>
+          <option value="Altul">Altul</option>
+        </select>
+      </label>
+
+      <label for="phone-number">Număr de telefon:</label>
+      <input type="tel" id="phone-number" name="phone-number" placeholder="07xx xxx xxx" required>
+
+
+      <button type="submit" id="confirm-reservation">Rezervă</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -2652,6 +2715,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
 
-    
+   
+  
 </body>
 </html>

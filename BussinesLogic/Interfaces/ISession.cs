@@ -14,5 +14,13 @@ namespace BussinesLogic.Interfaces
           URegisterResp UserRegister(URegisterData data);
           HttpCookie GenCookie(string loginCredential);
           UserMinimal GetUserByCookie(string value);
-     }
+        bool IsAuthenticated(HttpCookieCollection cookies);
+        UDbTable GetUserById(int id);
+        void UpdateUser(UDbTable user);
+        UDbTable GetUserByEmail(string email);
+        UDbTable GetUserByCredential(string credential);
+
+
+    }
+
 }

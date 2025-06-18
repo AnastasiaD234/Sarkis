@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "E:\\trynow2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|e:\\trynow2\\sarkis\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|E:\\trynow2\\sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|e:\\trynow2\\sarkis\\views\\shared\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|e:\\trynow2\\sarkis\\models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\models\\contactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|E:\\trynow2\\bussineslogic\\dbmodel\\contactcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C05D0BD-90EE-40F1-855A-9BE6EC3A2DC9}|BussinesLogic\\BussinesLogic.csproj|solutionrelative:bussineslogic\\dbmodel\\contactcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE488F27-7AE8-40C5-A710-2B9BC6C81501}|Domain\\Domain.csproj|e:\\trynow2\\domain\\entities\\user\\contacttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE488F27-7AE8-40C5-A710-2B9BC6C81501}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user\\contacttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|e:\\trynow2\\sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E369C3D-A6DD-49D6-8B69-05DCA85A8AC6}|Sarkis\\Sarkis.csproj|solutionrelative:sarkis\\views\\shared\\meniu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\trynow2\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\trynow2\\Sarkis\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Sarkis\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T19:00:31.993Z",
               "IsPinned": true,
@@ -52,67 +36,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactModel.cs",
-              "DocumentMoniker": "E:\\trynow2\\Sarkis\\Models\\ContactModel.cs",
-              "RelativeDocumentMoniker": "Sarkis\\Models\\ContactModel.cs",
-              "ToolTip": "E:\\trynow2\\Sarkis\\Models\\ContactModel.cs",
-              "RelativeToolTip": "Sarkis\\Models\\ContactModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T17:22:40.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "E:\\trynow2\\Sarkis\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Sarkis\\Controllers\\ContactController.cs",
-              "ToolTip": "E:\\trynow2\\Sarkis\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Sarkis\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T16:19:27.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "E:\\trynow2\\Sarkis\\Views\\Shared\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Contact.cshtml",
-              "ToolTip": "E:\\trynow2\\Sarkis\\Views\\Shared\\Contact.cshtml",
-              "RelativeToolTip": "Sarkis\\Views\\Shared\\Contact.cshtml",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAmwHIAAAASAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Meniu.cshtml",
+              "DocumentMoniker": "E:\\trynow2\\Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "RelativeDocumentMoniker": "Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "ToolTip": "E:\\trynow2\\Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "RelativeToolTip": "Sarkis\\Views\\Shared\\Meniu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-17T16:17:38.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ContactTable.cs",
-              "DocumentMoniker": "E:\\trynow2\\Domain\\Entities\\User\\ContactTable.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\User\\ContactTable.cs",
-              "ToolTip": "E:\\trynow2\\Domain\\Entities\\User\\ContactTable.cs",
-              "RelativeToolTip": "Domain\\Entities\\User\\ContactTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T12:59:49.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContactContext.cs",
-              "DocumentMoniker": "E:\\trynow2\\BussinesLogic\\DBModel\\ContactContext.cs",
-              "RelativeDocumentMoniker": "BussinesLogic\\DBModel\\ContactContext.cs",
-              "ToolTip": "E:\\trynow2\\BussinesLogic\\DBModel\\ContactContext.cs",
-              "RelativeToolTip": "BussinesLogic\\DBModel\\ContactContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T12:57:35.142Z",
+              "WhenOpened": "2025-06-18T12:08:53.452Z",
               "EditorCaption": ""
             }
           ]

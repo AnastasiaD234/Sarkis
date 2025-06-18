@@ -1,5 +1,8 @@
 ﻿using BussinesLogic.DBModel;
+using BussinesLogic.Interfaces;
+using Domain.Entities;
 using Domain.Entities.User;
+using Sarkis.BussinesLogic;
 using Sarkis.Models;
 using System;
 using System.Collections.Generic;
@@ -9,11 +12,14 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace Sarkis.Controllers
 {
     public class ReservationsController : Controller
     {
         private readonly ReservareContext _db;
+        private readonly ISession _session = new SessionBL();
+
 
         public ReservationsController()
         {
@@ -23,8 +29,8 @@ namespace Sarkis.Controllers
 
         public ActionResult Create()
         {
-           
-            var model = new ReservareModel();
+
+            var model = TempData["RezervareModel"] as ReservareModel ?? new ReservareModel();
             return View(model);
         }
 
@@ -33,6 +39,13 @@ namespace Sarkis.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ReservareModel model)
         {
+
+            if ( Session["UserId"] == null)
+            {
+                TempData["RezervareModel"] = model;
+                return RedirectToAction("Authentification", "Auth");
+            }
+
             if (!ModelState.IsValid)
             {
                 
@@ -71,8 +84,8 @@ namespace Sarkis.Controllers
                 }
                 _db.SaveChanges();
             }
-       
-            return RedirectToAction("Authentification","Auth", new { id = entity.ReservationId });
+            TempData["SuccessMessage"] = "Rezervarea cu bucate a fost trimisă cu succes!";
+            return RedirectToAction("Index", "Home");
         }
 
 

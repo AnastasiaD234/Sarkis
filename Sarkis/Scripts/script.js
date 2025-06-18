@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isAuthenticated && isLoggedIn) {
             alert("Trebuie să fii autentificat pentru a face o rezervare.");
-            window.location.href = "/View/Auth/Authentification";
+            window.location.href = "/Auth/Authentification?returnUrl=/Reservations/Create";;
             return;
         }
 

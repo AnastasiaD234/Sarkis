@@ -1,0 +1,53 @@
+﻿@model Sarkis.Models.UserSetariModel
+
+@{
+    ViewBag.Title = "Setari";
+}
+
+
+
+<section class="profile-section">
+    <div class="profile-container">
+ 
+        @using (Html.BeginForm("Setari", "Home", FormMethod.Post, new { @class = "profile-buttons" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Id)
+
+            <div class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-user-3-fill"></i>
+                </div>
+                <div class="profile-text">
+                    @Html.TextBoxFor(m => m.Username, new
+                    {
+                        @class = "form-control",
+                        placeholder = "Schimbă numele"
+                    })
+                </div>
+            </div>
+
+            <div class="profile-btn">
+                <div class="profile-icon">
+                    <i class="ri-mail-send-line"></i>
+                </div>
+                <div class="profile-text">
+                    @Html.TextBoxFor(m => m.Email, new
+                    {
+                        @class = "form-control",
+                        placeholder = "Schimbă email-ul"
+                    })
+                </div>
+            </div>
+
+            <div class="profile-btn">
+                <button type="submit" class="btn btn-success">Confirmă</button>
+            </div>
+
+            <div class="profile-btn">
+                <a href="@Url.Action("profile", "Home")" class="btn btn-secondary">Înapoi</a>
+            </div>
+        }
+    </div>
+</section>
+
